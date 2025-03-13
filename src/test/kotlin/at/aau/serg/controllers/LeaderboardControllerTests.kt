@@ -49,6 +49,7 @@ class LeaderboardControllerTests {
 
         verify(mockedService).getGameResults()
         assertEquals(3, res.size)
+        //updated for new sorting algorithm (time as tie breaker)
         assertEquals(second, res[0])
         assertEquals(third, res[1])
         assertEquals(first, res[2])
